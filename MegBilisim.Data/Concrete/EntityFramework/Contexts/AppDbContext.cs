@@ -1,4 +1,5 @@
-﻿using MegBilisim.Entities.Concrete;
+﻿using MegBilisim.Data.Concrete.EntityFramework.Mappings;
+using MegBilisim.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,16 @@ namespace MegBilisim.Data.Concrete.EntityFramework.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(connectionString: @"Data Source=DESKTOP-1C9EMR6;Initial Catalog=MegDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new CompanyMap());
+            modelBuilder.ApplyConfiguration(new DuesMap());
+            modelBuilder.ApplyConfiguration(new ElectricMap());
+            modelBuilder.ApplyConfiguration(new RoleMap());
+            modelBuilder.ApplyConfiguration(new SubscriberMap());
+            modelBuilder.ApplyConfiguration(new UserMap());
+            modelBuilder.ApplyConfiguration(new WaterMap());
         }
     }
 }
