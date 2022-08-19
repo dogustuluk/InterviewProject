@@ -28,8 +28,8 @@ namespace MegBilisim.Data.Concrete.EntityFramework.Mappings
             builder.Property(c => c.ModifiedDate).IsRequired();
             builder.Property(c => c.Phone).HasMaxLength(17);
             builder.Property(c => c.Email).HasMaxLength(128);
-            builder.Property(c => c.Password).IsRequired();
-            builder.Property(c => c.Password).HasMaxLength(50);
+            builder.Property(c => c.PasswordHash).IsRequired();
+            builder.Property(c => c.PasswordHash).HasMaxLength(50);
             builder.Property(c => c.IsDeleted).IsRequired();
             builder.ToTable("Companies");
         }
