@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MegBilisim.Entities\MegBilisim.Entities.csproj" />
+    <ProjectReference Include="..\MegBilisim.Shared\MegBilisim.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
