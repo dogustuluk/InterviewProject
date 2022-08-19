@@ -14,6 +14,7 @@ namespace MegBilisim.Entities.Concrete
         public string Password { get; set; }
         public int RoleId { get; set; }
         public Role Role { get; set; }
+        public ICollection<Company> Companies { get; set; }
 
     }
 }

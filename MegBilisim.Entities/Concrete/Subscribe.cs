@@ -13,10 +13,13 @@ namespace MegBilisim.Entities.Concrete
         public int CompanyId { get; set; }
         public Company Company { get; set; }
         public int ElectricId { get; set; }
-        public ICollection<Electric> Electric { get; set; }
+        public Electric Electric { get; set; }
+        //public ICollection<Electric> Electric { get; set; }
         public int WaterId { get; set; }
-        public ICollection<Water> Water { get; set; }
+        public Water Water { get; set; }
+        //public ICollection<Water> Water { get; set; }
         public int DuesId { get; set; }
-        public ICollection<Dues> Dues { get; set; }
+        public Dues Dues { get; set; }
+        //public ICollection<Dues> Dues { get; set; }
     }
 }

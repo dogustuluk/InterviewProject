@@ -9,6 +9,6 @@ namespace MegBilisim.Entities.Concrete
 {
     public class Dues:EntityInvoiceBase,IEntity
     {
-
+        public ICollection<Subscribe> Subscribes { get; set; }
     }
 }

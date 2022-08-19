@@ -15,5 +15,7 @@ namespace MegBilisim.Entities.Concrete
         public string LastIndex { get; set; }
         public DateTime FirstReadingDate { get; set; }
         public DateTime LastReadingDate { get; set; }
+        public ICollection<Subscribe> Subscribes { get; set; }
+
     }
 }

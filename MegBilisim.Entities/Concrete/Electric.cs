@@ -11,5 +11,6 @@ namespace MegBilisim.Entities.Concrete
     {
         public string CounterSerialNo { get; set; }
         public string ConsumerGroup { get; set; }
+        public ICollection<Subscribe> Subscribes { get; set; }
     }
 }
