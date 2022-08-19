@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MegBilisim.Data.Concrete
+namespace MegBilisim.Data.Concrete.EntityFramework.Repositories
 {
-    public class UserRepository : EfEntityRepository<User>, IUserRepository
+    public class EfSubscribeRepository : EfEntityRepository<Subscribe>, ISubscribeRepository
     {
-        public UserRepository(DbContext context) : base(context)
+        public EfSubscribeRepository(DbContext context) : base(context)
         {
             //Ek Özellikler
         }

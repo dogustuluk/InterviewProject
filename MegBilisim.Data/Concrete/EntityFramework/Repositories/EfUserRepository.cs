@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MegBilisim.Data.Concrete
+namespace MegBilisim.Data.Concrete.EntityFramework.Repositories
 {
-    public class ElectricRepository : EfEntityRepository<Electric>, IElectricRepository
+    public class EfUserRepository : EfEntityRepository<User>, IUserRepository
     {
-        public ElectricRepository(DbContext context) : base(context)
+        public EfUserRepository(DbContext context) : base(context)
         {
             //Ek Özellikler
         }

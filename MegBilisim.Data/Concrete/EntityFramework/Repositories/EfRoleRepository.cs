@@ -8,13 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MegBilisim.Data.Concrete
+namespace MegBilisim.Data.Concrete.EntityFramework.Repositories
 {
-    public class DuesRepository : EfEntityRepository<Dues>, IDuesRepository
+    public class EfRoleRepository : EfEntityRepository<Role>, IRoleRepository
     {
-        public DuesRepository(DbContext context) : base(context)
+        public EfRoleRepository(DbContext context) : base(context)
         {
-            //Ek Özellikler
         }
     }
 }
