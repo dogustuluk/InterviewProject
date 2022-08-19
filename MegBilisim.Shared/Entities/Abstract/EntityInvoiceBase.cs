@@ -14,7 +14,7 @@ namespace MegBilisim.Shared.Entities.Abstract
         public virtual DateTime PaymentDate { get; set; }
         public virtual decimal PaymentTotal { get; set; }
         public virtual DateTime CreatedDate { get; set; } = DateTime.Now;
-        public virtual DateTime ModifiedDate { get; set; } = DateTime.Now;
+        public virtual DateTime ModifiedDate { get; set; } = DateTime.Now; //nullable yap -> saveChanges esnasında yap
         public virtual string CreatedByName { get; set; } = "Admin";
         public virtual string ModifiedByName { get; set; } = "Admin";
         public virtual bool IsDeleted { get; set; } = false;
